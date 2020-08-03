@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: beige;
+    color:#fff;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10em;
+}
+
+.spotlight {
+    position: relative;
+    height: 40em;
+    width: 30em;
+    max-height: 40em;
+    max-width: 30em;
+}
+
+.spotlight>img {
+    position: absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    transition: .5s filter;
+}
+
+.spotlight>h2 {
+    z-index: 1;
+    color:rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+    transition: .5s color;
+}
+
+.spotlight > img:hover {
+    filter:blur(5px);
+}
+.spotlight > img:hover + h2 {
+    color:rgba(255, 255, 255, 255)
+}
