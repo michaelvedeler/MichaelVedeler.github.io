@@ -44,9 +44,9 @@ body {
     transition: .5s color;
 }
 
-.spotlight > img:hover {
+.spotlight:hover>img {
     filter:blur(5px);
 }
-.spotlight > img:hover + h2 {
+.spotlight:hover>h2 {
     color:rgba(255, 255, 255, 255)
 }
