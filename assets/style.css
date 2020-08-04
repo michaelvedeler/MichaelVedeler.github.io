@@ -6,47 +6,50 @@
 body {
     background: beige;
     color:#fff;
+    font-size: 13pt;
+    font-family: sans-serif;
 }
 
-#main {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10em;
+.jumbo {
+    height: 80vh;
 }
 
-.spotlight {
-    position: relative;
-    height: 40em;
-    width: 30em;
-    max-height: 40em;
-    max-width: 30em;
+#main-menu {
+    color: #000;
+    font-size: 2em;
 }
 
-.spotlight>img {
-    position: absolute;
-    z-index: 0;
-    top:0;
-    left:0;
+#main-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+figure>img {
+    /* position: absolute;
+    z-index: 0; */
     width: 100%;
-    height: 100%;
 
     transition: .5s filter;
 }
 
-.spotlight>h2 {
-    z-index: 1;
+figure>figcaption {
+    /* z-index: 1; */
     color:rgba(255, 255, 255, 0);
-    position: absolute;
-    top: 50%;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    position: relative;
+    top: -30%;
     width: 100%;
     text-align: center;
 
     transition: .5s color;
 }
 
-.spotlight:hover>img {
+figure:hover>img {
     filter:blur(5px);
 }
-.spotlight:hover>h2 {
+figure:hover>figcaption {
     color:rgba(255, 255, 255, 255)
 }

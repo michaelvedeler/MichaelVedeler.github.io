@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Vedeler</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
+
 <body>
-    <head>
-        <h1>Michael Vedeler</h1>
-    </head>
-    <img src="/img/logo.svg" alt="MV">
+    <div class="">
+        <header class="jumbo">
+            <h1>Michael Vedeler</h1>
+            <img src="/img/logo.svg" alt="MV">
+        </header>
 
-    <section id="main">
-        <div class="spotlight">
-            <img src="/assets/img/interior.jpg"  alt="interior" >
-            <h2>Realism</h2>
+        <div class="columns is-gapless">
+            <nav id="main-menu" class="column is-one-fifth">
+                <ul>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="main" class="column is-four-fifths">
+                <div class="columns">
+                    <figure class="column is-one-third">
+                        <img src="/assets/img/interior-sm.jpg" alt="interior">
+                        <figcaption>Realism 1</figcaption>
+                    </figure>
+                    <figure class="column is-one-third" >
+                        <img src="/assets/img/interior-sm.jpg" alt="interior">
+                        <figcaption>Realism 1</figcaption>
+                    </figure>
+                </div>
+                <div class="columns">
+                    <figure class="column is-one-third">
+                        <img src="/assets/img/interior-sm.jpg" alt="interior">
+                        <figcaption>Detail 1</figcaption>
+                    </figure>
+                    <figure class="column is-one-third">
+                        <img src="/assets/img/interior-sm.jpg" alt="interior">
+                        <figcaption>Detail 2</figcaption>
+                    </figure>
+                </div>
+            </section>
         </div>
-        <div class="spotlight">
-            <img src="/assets/img/interior.jpg"  alt="interior" >
-            <h2>Detail</h2>
-        </div>
-    </section>
-
-
+        <footer>
+            <small>Copyright &copy; 2020 - Michael Vedeler </small>
+        </footer> 
+    </div>
 </body>
 </html>
