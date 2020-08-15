@@ -4,19 +4,35 @@
 }
 
 body {
-    background: beige;
-    color:#fff;
+    background: #fff;
     font-size: 13pt;
     font-family: sans-serif;
 }
 
 .jumbo {
-    height: 80vh;
+    padding: 3em;
+    height: 100vh;
+    color: #fff;
+    background-image: url('/assets/img/jumbo-background.png');
+    background-size:100% 100%;
+    margin-bottom: 3em;
+}
+
+.jumbo>h1 {
+    font-size: 3em;
+    text-align: right;
+}
+
+.jumbo>#logo {
+    width: 20em;
+    height: 20em;
+    display: block;
+    margin: 5% auto;
 }
 
 #main-menu {
-    color: #000;
-    font-size: 2em;
+    color: #333;
+    font-size: 1em;
 }
 
 #main-menu a {
