@@ -11,50 +11,45 @@
             src: url('assets/Univers-light-normal.ttf') format('truetype');
         }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
-    <div>
+    <div id="grid">
         <header class="jumbo">
             <h1>Michael Vedeler</h1>
             <img id="logo" src="/assets/img/logo_white.png" alt="MV">
         </header>
 
-        <div class="columns">
-            <nav id="main-menu" class="column is-one-fifth">
-                <ul>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <section id="main" class="column is-four-fifths">
-                <div class="columns">
-                    <figure class="column is-one-third">
-                        <img src="/assets/img/realism-1.png" alt="interior">
-                        <figcaption>Realism 1</figcaption>
-                    </figure>
-                    <figure class="column is-one-third" >
-                        <img src="/assets/img/realism-2.png" alt="interior">
-                        <figcaption>Realism 2</figcaption>
-                    </figure>
-                </div>
-                <div class="columns">
-                    <figure class="column is-one-third">
-                        <img src="/assets/img/space-1.png" alt="interior">
-                        <figcaption>Space 1</figcaption>
-                    </figure>
-                    <figure class="column is-one-third">
-                        <img src="/assets/img/detail-1.jpg" alt="interior">
-                        <figcaption>Detail 1</figcaption>
-                    </figure>
-                </div>
-            </section>
-        </div>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="main">
+            <figure>
+                <img src="/assets/img/realism-1.png" alt="Realism 1">
+                <figcaption>Realism 1</figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/img/realism-2.png" alt="Realism 2">
+                <figcaption>Realism 2</figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/img/space-1.png" alt="Space 1">
+                <figcaption>Space 1</figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/img/detail-1.jpg" alt="Detail 1">
+                <figcaption>Detail 1</figcaption>
+            </figure>
+        </section>
         <footer>
             <small>Copyright &copy; 2020 - Michael Vedeler </small>
-        </footer> 
+        </footer>
     </div>
 </body>
+
 </html>
