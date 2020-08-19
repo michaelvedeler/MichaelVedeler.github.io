@@ -1,3 +1,7 @@
+:root {
+    font-size: 13pt;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,18 +9,17 @@
 
 body {
     background: #fff;
-    font-size: 13pt;
     font-family: 'Univers', sans-serif;
 }
 
 #grid {
     display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 4fr;
+    grid-gap: 5em;
+    grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas:
-        'header header '
-        'sidebar content'
-        'footer footer';
+        'header header header'
+        'sidebar content right'
+        'footer footer footer';
     grid-template-rows:  calc(100vh + 3em) minmax(100px,auto) minmax(200px, auto);
 }
 
@@ -27,11 +30,11 @@ body {
     color: #fff;
     background-image: url('/assets/img/jumbo-background.png');
     background-size:100% 100%;
-    margin-bottom: 3em;
 }
 
 .jumbo>h1 {
-    font-size: 3em;
+    font-weight: normal;
+    font-size: 2em;
     text-align: right;
 }
 
@@ -39,7 +42,9 @@ body {
     width: 20em;
     height: 20em;
     display: block;
-    margin: 5% auto;
+    position: absolute;
+    top: calc(50% - 10em);
+    left: calc(50% - 10em);
 }
 
 #main-menu {
@@ -52,7 +57,9 @@ body {
 #main-menu ul{
     list-style: none;
 }
-
+#main-menu li {
+    line-height: 2em;
+}
 #main-menu a {
     color: #000;
     text-decoration: none;
@@ -66,10 +73,9 @@ body {
 
 #main figure {
     font-size: 2em;
-    font-weight: bold;
 
-    width: calc(50% - 5em);
-    margin: 0 5em 5em 0;
+    width: calc(50% - 3em);
+    margin: 0 1.5em 3em 1.5em;
     overflow: hidden;
 
     position: relative;
