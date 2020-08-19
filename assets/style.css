@@ -1,5 +1,6 @@
-:root {
-    font-size: 13pt;
+@font-face {
+    font-family: 'Univers';
+    src: url('assets/Univers-light-normal.ttf') format('truetype');
 }
 
 * {
@@ -8,8 +9,24 @@
 }
 
 body {
+    font-size: 13pt;
     background: #fff;
+    color: #333;
     font-family: 'Univers', sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    margin: 2em;
+    list-style: square;
+}
+
+li {
+    line-height: 2em;
 }
 
 #grid {
@@ -49,16 +66,13 @@ body {
 
 #main-menu {
     grid-area: sidebar;
-    color: #333;
     font-size: 1em;
     padding: 0 2em;
 }
 
 #main-menu ul{
+    margin: 0;
     list-style: none;
-}
-#main-menu li {
-    line-height: 2em;
 }
 #main-menu a {
     color: #000;
@@ -90,18 +104,45 @@ figure>img {
 figure>figcaption {
     position: absolute;
     top: calc(50% - 0.5em);
-    color:rgba(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 255);
     width: 100%;
     text-align: center;
 
     transition: .5s color;
 }
 
-figure:hover>img {
-    filter:blur(5px);
+
+@media(pointer: fine){
+    /* blurred animation on hover only when no touch */
+    figure>figcaption {
+        color: rgba(255, 255, 255, 0);
+    }
+    figure:hover>img {
+        filter:blur(5px);
+    }
+    figure:hover>figcaption {
+        color:rgba(255, 255, 255, 255)
+    }
 }
-figure:hover>figcaption {
-    color:rgba(255, 255, 255, 255)
+
+.content-grid {
+    display: grid;
+    grid-gap: 5em;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+        'text pic'
+        'footer footer';       
+
+    margin: 5em;
+}
+
+#about {
+    grid-area: text;
+}
+
+#profile-picture {
+    grid-area: pic;
+    width: 100%;
 }
 
 footer {
