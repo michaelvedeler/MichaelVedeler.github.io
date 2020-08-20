@@ -45,6 +45,25 @@
             <small>Copyright &copy; 2020 - Michael Vedeler </small>
         </footer>
     </div>
+    <script>
+        document.querySelectorAll('a.scroller').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var targetElement = document.querySelector(this.getAttribute('href'));
+                var gridContainer = targetElement.parentElement;
+                
+                var gridGap = getComputedStyle(gridContainer).rowGap;
+
+                var position = targetElement.getBoundingClientRect().top;
+                
+                window.scrollTo({
+                    top: position - parseFloat(gridGap),
+                    behavior: "smooth"
+                });   
+            });
+        });
+    </script>
 </body>
 
 </html>
