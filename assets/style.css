@@ -78,7 +78,7 @@ a.scroller {
     border: #fff 1px solid;
     margin:0 auto;
     position: absolute;
-    left: calc(50% - 32px);
+    left: calc(50% - 16px);
     bottom: 1em;
 }
 
