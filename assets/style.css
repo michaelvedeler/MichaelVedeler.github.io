@@ -64,6 +64,29 @@ li {
     left: calc(50% - 10em);
 }
 
+a.scroller {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20pt;
+    display: block;
+    text-align: center;
+    line-height: 18pt;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: #fff 1px solid;
+    margin:0 auto;
+    position: absolute;
+    left: calc(50% - 32px);
+    bottom: 1em;
+}
+
+a.scroller:hover {
+    text-shadow: 0px 0px 3px #000;
+    box-shadow: 0px 0px 3px #000;
+}
+
 #main-menu {
     grid-area: sidebar;
     font-size: 1em;
