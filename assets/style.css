@@ -74,6 +74,10 @@ li {
     margin: 0;
     list-style: none;
 }
+
+#main-menu ul>li:hover{
+    font-weight: bold;
+}
 #main-menu a {
     color: #000;
     text-decoration: none;
@@ -127,7 +131,7 @@ figure>figcaption {
 
 .content-grid {
     display: grid;
-    grid-gap: 5em;
+    grid-gap: 15em;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: 
         'text pic'
