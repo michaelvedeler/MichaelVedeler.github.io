@@ -8,11 +8,20 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 12pt;
     background: #fff;
     color: #333;
     font-family: 'Univers', sans-serif;
+}
+
+:target {
+    position: relative;
+    top: -5em;
 }
 
 p {
